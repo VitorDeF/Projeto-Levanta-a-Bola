@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="© 2022 Levanta a Bola" />
+    <meta name="authors"
+        content="Amanda M de Souza, Letícia T L Carvalho, Pedro R Vidigal, Vítor de F Pereira, Vitor N Calhau" />
+    <meta name="description" content="Espaço digital para planejamento de eventos esportivos" />
+    <meta name="keywords"
+        content="esporte, jogar, aluguel, espaço esportivo, futebol, basquete, volei, tenis, locação, disponível" />
+    <!-- Style -->
+    <!-- Bootstrap v4.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Script -->
+    <!-- Bootstrap v4.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+        defer></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" defer></script>
+    <!-- Main -->
+    <script src="js/main.js" defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- charts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Título da página -->
+    <title>Dashboard</title>
+</head>
+
+<body style="margin: 1%;"
+    onload="indDesempenho1(), indDesempenho2(), indDesempenho3(), indDesempenho4(), indDesempenho5()">
+
+    <div style="margin-bottom: 2%;">
+        <h1>Indicadores de Desempenho</h1>
+    </div>
+
+
+    <div class="col-12">
+
+        <div class="row">
+
+            <!-- INDICADOR 1 -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Público do site</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Indicador</h6>
+                    <p>Percentual de pessoas que cadastram como jogador e que cadastram como proprietário </p>
+
+                    <!-- Chart Indicador 1 -->
+                    <div>
+                        <canvas id="chart_ind1"></canvas>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- INDICADOR 2 -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Desempenho dos eventos</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Indicador</h6>
+                    <p>Quantidade de eventos [eixo Y] que alcançaram o mínimo de jogadores por mês [eixo X]</p>
+
+                    <!-- Chart Indicador 2 -->
+                    <div>
+                        <canvas id="chart_ind2"></canvas>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- INDICADOR 3 -->
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Popularidade das modalidades</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Indicador</h6>
+                    <p>Quantidade de eventos criados por modalidade</p>
+
+                    <!-- Chart Indicador 3 -->
+                    <div>
+                        <canvas id="chart_ind3"></canvas>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- INDICADOR 4  -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Crescimento do site</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Indicador</h6>
+                    <p>Quantidade de eventos aprovados por mês</p>
+                    <p id="chart_ind4"></p>
+                </div>
+            </div>
+
+
+            <!-- INDICADOR 5 -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Desempenho dos eventos</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Indicador</h6>
+                    <p>Eventos que alcançaram o mínimo de jogadores por mês</p>
+                    <p id="chart_ind5"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>

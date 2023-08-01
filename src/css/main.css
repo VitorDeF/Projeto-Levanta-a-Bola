@@ -1,0 +1,28 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    padding: 30px; 
+    align-items: center;  
+    background-color: rgb(204, 195, 195);
+}
+
+#criar_evento{
+    padding-left: 35px;
+}
+
+#card_informações{
+    border: solid;
+    justify-content: center;
+}
+
+.list-group{
+    justify-content: center;
+}
+
+#card_dados{
+    margin-top: 20px;
+    padding-top: 85px;
+}

@@ -1,0 +1,77 @@
+h1 {
+    margin: 10px;
+}
+
+header {
+    background-color: #D9D9D9;
+}
+
+.btn3 {
+    padding: 10px 8px;
+    margin: 10px;
+    right: 45px;
+    width: 70px;
+    color: #fff;
+    background: #474747;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    padding: 10px 8px;
+    left: 45px;
+    width: 70px;
+    color: #fff;
+    background: #474747;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #2e2e2e;
+}
+
+.btn {
+    padding-top: 15px;
+    text-align: justify;
+    color: black;
+}
+
+.card {
+    margin-top: 80px;
+    
+    padding-top: 25px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.cas {
+    
+    background: #D9D9D9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.data {
+    margin-top: 150px;
+    
+    padding: 15px;
+    border-radius: 8px;
+}
+
+main {
+    padding-bottom: 100px;
+   
+}
+
+.aviso {
+    align-items: center;
+    margin-top: 50px;
+    background: #D9D9D9;
+}

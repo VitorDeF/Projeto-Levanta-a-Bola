@@ -1,0 +1,23 @@
+{
+  "name": "plf-es-2022-2-ti2-0924100-levanta-a-bola",
+  "version": "1.0.0",
+  "description": "Atualmente, percebe-se, no mercado brasileiro, a ausência de uma plataforma capaz de conectar atletas, entusiastas de esportes e professores de Educação Física a fim de agendarem partidas ou juntarem-se a uma equipe. Diante disso, a aplicação 'Levanta a Bola' tem o objetivo de oferecer, de forma fácil e intuitiva, um espaço digital para planejar jogos em diversas modalidades, disponibilizando os diversos espaços esportivos presentes na cidade, bem como a opção de formar times para um evento e alugar os materiais necessários.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti2-0924100-levanta-a-bola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti2-0924100-levanta-a-bola/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti2-0924100-levanta-a-bola#readme"
+}

@@ -1,0 +1,90 @@
+* {
+    font-size: x-large !important;
+    text-decoration: none !important;
+    size: 100%;
+    color:black !important;
+}
+
+html{
+    height: 200%;
+}
+
+header {
+	display: flex;
+	margin-top: 25px;
+    margin-bottom: 25px ;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main {
+    margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-img{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados{
+    text-align: center !important;
+}
+
+.input{
+    background-color:  white !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.changeData{
+    text-align: center !important;
+}
+
+#card{
+    position:sticky;
+    background-color:  rgb(231, 231, 231) !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+
+nav{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.nav_bar{ 
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-evenly;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.mensagem{
+    padding: 10px !important;
+}
+
+.btn-alterar{
+    text-align: center !important;
+}
+
+
+

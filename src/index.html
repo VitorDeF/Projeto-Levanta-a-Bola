@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="© 2022 Levanta a Bola" />
+    <meta name="authors" content="Amanda M de Souza, Letícia T L Carvalho, Pedro R Vidigal, Vítor de F Pereira, Vitor N Calhau" />
+    <meta name="description" content="Espaço digital para planejamento de eventos esportivos" />
+    <meta name="keywords" content="esporte, jogar, aluguel, espaço esportivo, futebol, basquete, volei, tenis, locação, disponível" />
+    <!-- Style -->
+        <!-- Bootstrap v4.0 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/bootstrap4-toggle/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <!-- Main -->
+        <link rel="stylesheet" href="css/landingpage.css">
+    <!-- Script -->
+        <!-- Bootstrap v4.0 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+        <script src="node_modules/bootstrap4-toggle/js/bootstrap4-toggle.min.js" defer></script>
+        <!-- Ajax -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" defer></script>
+        <!-- Main -->
+        <script src="js/landingpage.js" defer></script>
+        <script src="js/main.js" defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- Título da página -->
+    <title>Home - Levanta a Bola</title>
+
+    <style>
+        body {
+        background-image: "img/background.png";
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body background="img/background.png">
+    <header>
+        <nav>
+            <div class="container">
+            <div class="row">
+                <div class="col-4 logo">
+                    <img src="img/logo.png" style="max-width: 130px;">
+                </div>
+                <div class="col-8 nav_bar" style="align-items: center;">
+                    <!--Sobre-->
+
+                    <div class="center">
+                        <button><a style="color: black;" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti2-0924100-levanta-a-bola" target="_blank">SOBRE NÓS</a></button>
+                    </div>
+                        
+                    <!--Login-->
+                    <div class="center">
+                        <button id="show_cadastro">CADASTRAR</button>
+                    </div>
+                    <!--Cadastro-->
+                    <div class="center">
+                        <button id="show_login">ENTRAR</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--login-->
+        <div class="popup">
+            <div class="close_btn">&times;</div>
+            <div class="form">
+                <h2>Entrar</h2>
+                <div class="form_element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Coloque seu email">
+                </div>
+                <div class="form_element">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Coloque sua senha">
+                </div>
+                <div class="form_element mt-4">
+                    <button onclick="login()">Entrar</button>
+                </div>
+            </div>
+        </div>
+        <!--login fim-->
+        <!--cadastro-->
+        <div class="popupcadastro">
+            <div class="close_btn">&times;</div>
+            <div class="form">
+                <h2>Cadastro</h2>
+                <div class="form_element">
+                    <label for="c_nome">Nome</label>
+                    <input type="text" id="c_nome" placeholder="Coloque seu nome">
+                </div>
+                <div class="form_element">
+                    <label for="c_email">Email</label>
+                    <input type="text" id="c_email" placeholder="Coloque seu email">
+                </div>
+                <div class="form_element">
+                    <label for="c_password">Senha</label>
+                    <input type="password" id="c_password" placeholder="Coloque sua senha">
+                </div>
+                <div class="form_element">
+                    <input id="tipo" type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-offstyle="secondary" data-on="Jogador" data-off="Proprietário">
+                </div>
+                <div class="form_element">
+                    <div class="form_element">
+                        <button onclick="cadastro()">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cadastro fim-->
+        <div class="container">
+        <div class="row corpo">
+            <div class="col-7 texto_landpg">
+                <h1 style="color: aliceblue; font-size: 130%; filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2))">Forme sua quadrilha com a gente</h1>
+            </div>
+        </div>
+        <div class="row botoes">
+            <div class="col-2 btn_comece">
+                <button><a target="_blank" href="./dashboard.html" style="color: black; width: 80px;">Dashboard de Indicadores</a></button>
+            </div>
+            <div class="col-2 btn_comece">
+                <button><a target="_blank" href="./dashboard.html" style="color: black; width: 80px;">Admin</a></button>
+            </div>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>

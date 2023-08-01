@@ -1,0 +1,8 @@
+cd src //para utilizar o package.json nosso **
+npm init -y	    //inicia o app do node com o package.json **
+npm install express --save	//express é uma api que usa o node
+npm install mysql	//mysql é o tipo do bd
+npm i dotenv	//cria um local de proteção de dados que queremos esconder
+npm i nodemon	//usado pra fazer funcionar e dar refresh no servidor sempre que tiver alterções
+npm i axios     //trem do arthur usa pra conectar o back com o front a partir de uri request
+npm start       //inicia o script do nodemon **
